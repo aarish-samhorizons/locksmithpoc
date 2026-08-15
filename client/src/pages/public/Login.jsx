@@ -25,7 +25,7 @@ export default function Login() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         {/* Logo */}
         <div className="flex justify-center text-2xl font-bold text-slate-900 tracking-tight">
-          Climate<span className="text-blue-600">AI</span>
+          Lock<span className="text-blue-600">Smit</span>
         </div>
       </div>
 
