@@ -211,13 +211,7 @@ export default function Footer() {
       </div>
 
       {/* Floating chat bubble */}
-      <a
-        href="#"
-        aria-label="Chat with us"
-        className="fixed md:absolute bottom-6 left-6 w-14 h-14 rounded-full bg-red-600 hover:bg-red-700 flex items-center justify-center shadow-lg transition-colors"
-      >
-        <MessageCircle className="w-6 h-6 text-white" fill="white" />
-      </a>
+
 
       {/* Scroll to top */}
       <button
