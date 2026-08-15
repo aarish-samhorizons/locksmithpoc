@@ -223,7 +223,7 @@ export default function Footer() {
       </button>
 
       {/* Google review badge */}
-      <div className="fixed md:absolute bottom-6 right-6 bg-white rounded-lg shadow-lg px-4 py-3 flex items-center gap-2">
+      {/* <div className="fixed md:absolute bottom-6 right-6 bg-white rounded-lg shadow-lg px-4 py-3 flex items-center gap-2">
         <GoogleGIcon className="w-8 h-8 flex-shrink-0" />
         <div>
           <div className="flex items-center gap-1">
@@ -236,7 +236,7 @@ export default function Footer() {
           </div>
           <p className="text-xs text-gray-500">Based on 6477 reviews</p>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }
