@@ -16,14 +16,21 @@ const locations = [
   },
 ];
 
+// const navItems = [
+//   { label: "Home", href: "#home", dropdown: false },
+//   { label: "Services", href: "#services", dropdown: false },
+//   { label: "Why Us", href: "#whyus", dropdown: false },
+//   { label: "Contact", href: "#contact", dropdown: false },
+//   { label: "FAQS", href: "#faqs", dropdown: false },
+// ];
 const navItems = [
-  { label: "Home", href: "#home", dropdown: false },
-  { label: "Services", href: "#services", dropdown: false },
-  { label: "Why Us", href: "#whyus", dropdown: false },
-  { label: "Contact", href: "#contact", dropdown: false },
-  { label: "FAQS", href: "#faqs", dropdown: false },
+  // 🔥 Har href ke shuru mein '/' laga diya hai
+  { label: "Home", href: "/#home", dropdown: false },
+  { label: "Services", href: "/#services", dropdown: false },
+  { label: "Why Us", href: "/#whyus", dropdown: false },
+  { label: "Contact", href: "/#contact", dropdown: false },
+  { label: "FAQS", href: "/#faqs", dropdown: false },
 ];
-
 function GoogleIcon() {
   return (
     <svg viewBox="0 0 48 48" className="w-8 h-8">
