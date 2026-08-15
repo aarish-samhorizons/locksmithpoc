@@ -13,7 +13,7 @@
   app.use(cookieParser());
   // Middleware
   app.use(cors({
-  origin: 'http://localhost:5173', // 👈 Aap ke React Vite app ka exact URL (trailing slash ke bina)
+  origin: ['http://localhost:5173', 'https://locksmithpoc.vercel.app'], // 👈 Aap ke React Vite app ka exact URL (trailing slash ke bina)
   credentials: true,               // 👈 IMPORTANT: Yeh true hoga tabhi JWT cookies exchange hongi!
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
