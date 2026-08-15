@@ -53,13 +53,7 @@ export default function HeroSection() {
       </div>
 
       {/* Floating chat bubble */}
-      <a
-        href="#"
-        aria-label="Chat with us"
-        className="absolute bottom-6 left-6 w-14 h-14 rounded-full bg-red-600 hover:bg-red-700 flex items-center justify-center shadow-lg transition-colors z-10"
-      >
-        <MessageCircle className="w-6 h-6 text-white" fill="white" />
-      </a>
+
 
       {/* Google review badge */}
       <div className="absolute bottom-6 right-6 bg-white rounded-lg shadow-lg px-4 py-3 flex items-center gap-2 z-10">
