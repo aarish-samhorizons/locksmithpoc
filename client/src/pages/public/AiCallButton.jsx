@@ -76,7 +76,7 @@ export default function AiCallButton() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center overflow-hidden">
       {callStatus === 'inactive' && (
         <button type="button" onClick={startCall} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all">
           🎧 Start AI Voice Dispatcher

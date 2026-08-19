@@ -33,7 +33,7 @@ export default function Register() {
     <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 px-6 lg:px-8 font-sans">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center text-2xl font-bold text-slate-900 tracking-tight">
-          Lock<span className="text-blue-600">Smit</span>
+          Lock<span className="text-red-600">Smit</span>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function Register() {
               <label className="block text-sm font-medium text-slate-900">Company Name</label>
               <input 
                 type="text" name="company_name" required onChange={handleChange}
-                className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent sm:text-sm bg-white text-slate-900"
+                className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent sm:text-sm bg-white text-slate-900"
               />
             </div>
 
@@ -68,7 +68,7 @@ export default function Register() {
 
             <button 
               type="submit" disabled={loading}
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-colors disabled:opacity-50"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-colors disabled:opacity-50"
             >
               {loading ? 'Registering...' : 'Create Account'}
             </button>
@@ -77,7 +77,7 @@ export default function Register() {
           <div className="mt-6 text-center">
             <p className="text-sm text-slate-600">
               Already have an account?{' '}
-              <Link to="/login" className="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline">
+              <Link to="/login" className="font-medium text-red-600 hover:text-blue-500 focus:outline-none focus:underline">
                 Login here
               </Link>
             </p>

@@ -25,7 +25,7 @@ export default function Login() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         {/* Logo */}
         <div className="flex justify-center text-2xl font-bold text-slate-900 tracking-tight">
-          Lock<span className="text-blue-600">Smit</span>
+          Lock<span className="text-red-600">Smit</span>
         </div>
       </div>
 
@@ -56,7 +56,7 @@ export default function Login() {
 
             <button 
               type="submit" disabled={loading}
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-colors disabled:opacity-50"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-colors disabled:opacity-50"
             >
               {loading ? 'Logging in...' : 'Log In'}
             </button>
@@ -65,7 +65,7 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-sm text-slate-600">
               Don't have an account?{' '}
-              <Link to="/register" className="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline">
+              <Link to="/register" className="font-medium text-red-600 hover:text-red-500 focus:outline-none focus:underline">
                 Register company
               </Link>
             </p>

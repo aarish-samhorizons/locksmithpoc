@@ -16,13 +16,7 @@ const locations = [
   },
 ];
 
-// const navItems = [
-//   { label: "Home", href: "#home", dropdown: false },
-//   { label: "Services", href: "#services", dropdown: false },
-//   { label: "Why Us", href: "#whyus", dropdown: false },
-//   { label: "Contact", href: "#contact", dropdown: false },
-//   { label: "FAQS", href: "#faqs", dropdown: false },
-// ];
+
 const navItems = [
   // 🔥 Har href ke shuru mein '/' laga diya hai
   { label: "Home", href: "/#home", dropdown: false },
@@ -211,13 +205,21 @@ export default function QuickKeyHeader() {
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-        {mobileOpen && (
-          <div className="md:hidden flex flex-col px-6 pb-4 gap-3">
-            {navItems.map((item) => (
-<a key={item.label} href={item.href} onClick={() => setMobileOpen(false)} className="..."></a>
-            ))}
-          </div>
-        )}
+  {mobileOpen && (
+  <div className="md:hidden flex flex-col px-6 pb-4 gap-3">
+    {navItems.map((item) => (
+      <a 
+        key={item.label} 
+        href={item.href} 
+        onClick={() => setMobileOpen(false)} 
+        // 👇 Thori si mobile styling bhi add kar di hai taake pyara lagay
+        className="text-white font-semibold tracking-wide py-2 border-b border-gray-800 hover:text-yellow-500 transition-colors"
+      >
+        {item.label} {/* ✅ Yahan label aayega tabhi text show hoga! */}
+      </a>
+    ))}
+  </div>
+)}
       </nav>
     </header>
   );
