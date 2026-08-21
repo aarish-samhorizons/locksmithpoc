@@ -1,6 +1,7 @@
 
-import React, { useState } from 'react';
-import api from '../../api/axios'; // 👈 Hamara centralized Axios import kiya
+import  { useState } from 'react';
+// // 👈 Hamara centralized Axios import kiya
+import axios from 'axios';
 import AiCallButton from './AiCallButton';// 👈 🔥 Naya Vapi Voice Button Import Kiya
 
 export default function Contact() {
@@ -21,13 +22,12 @@ export default function Contact() {
     setMessages(prev => [...prev, { sender: 'user', text: userMsg }]);
     setChatInput('');
     setLoading(true);
-
-    try {
-      const response = await api.post('/ai/qualify', {
-        message: userMsg,
-        sessionId: sessionId, // 👈 1. Customer ki random UUID chat memory ke liye
-        vendorId: "cc7cc569-f62c-49b2-9f42-d8852d4e3e7b" // 👈 2. Yahan apne database se ASLI Vendor ki ID daalo
-      });
+try {
+      // 🔥 api.post ki jagah axios.post lagaya aur Render ka poora URL daal diya
+const response = await axios.post('https://locksmithpoc-server.onrender.com/api/v1/ai/qualify', {
+  message: userMsg,
+  sessionId: sessionId
+});;;
 
       const { data, calendarLink } = response.data;
 

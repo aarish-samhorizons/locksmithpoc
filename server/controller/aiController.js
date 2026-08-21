@@ -39,7 +39,7 @@ export const qualifyLead = asyncHandler(async (req, res, next) => {
 
     // Native JSON Mode enable kiya hai taake parse fail na ho
     const model = genAI.getGenerativeModel({ 
-        model: "gemini-flash-latest",
+        model: "gemini-3.5-flash-lite",
         generationConfig: {
             responseMimeType: "application/json"
         }
