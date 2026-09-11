@@ -5,7 +5,7 @@ import { createEventFromAI, checkFreeSlots } from './calendarController.js';
 import supabase from '../db/supabase.js';
 import 'dotenv/config';
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-console.log("gemini key",genAI)
+
 const sessions = new Map();
 
 function getSession(userId) {
