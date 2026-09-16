@@ -149,12 +149,7 @@ export default function QuickKeyHeader() {
 
         {/* CTA buttons */}
         <div className="flex items-center gap-4 flex-wrap">
-<Link
-  to="/login"
-  className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-6 py-3 rounded-md transition-colors"
->
-  Vendor Login
-</Link>
+
 <a href="#contact" className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold uppercase tracking-wide px-8 py-3 rounded-md transition-colors inline-block text-center">
   Book Online
 </a>
