@@ -28,9 +28,9 @@ app.use(express.urlencoded({ extended: true }));
  // startCronJobs();
 console.log("⏰ Automated Cron Jobs initialized.");
   const PORT = process.env.PORT || 5000;
+  app.get('/', (req, res) => {
+      res.status(200).send('Locksmith Server is Awake!');
+  });
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
-app.get('/', (req, res) => {
-    res.status(200).send('Locksmith Server is Awake!');
-});
